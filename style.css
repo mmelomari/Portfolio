@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.caixa-principal {
+    /*usa o ponto p pegar a classe*/
+    height: 100vh;
+    /*altura da tela toda*/
+    width: 100%;
+    /*largura da tela toda*/
+    background-image: url(./img/fund.png);
+    background-size: cover; 
+    background-position: center;
+    /*quando puxa a tela, vem junto o background*/
+    background-color: #191919;
+
+
+}
+
+nav {
+    /*não precisa do ponto pq é um elemento*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*justifica os icones - separa um de cada lado*/
+    padding-left: 30px;
+    /*coloca os elementos para esquerda*/
+    padding-right: 30px;
+    /*coloca os elementos para direita*/
+    padding-top: 25px;
+    /*coloca os elementos para baixo*/
+    
+}
+
+.portfolio {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 500;
+    /*usado para engrossar a fonte*/
+}
+
+.portfolio span {
+    /*usado para selecionar a tag span*/
+    color: #f9004d;
+}
+
+li {
+    color: #ffffff;
+    list-style: none;
+    /*tira os pontinho de lista do li*/
+    display: inline-block;
+    /*coloca os nomes um do lado do 
+    outro, se fosse só block ficaria um embaixo do outro*/
+    font-size: 25px;
+    /*aumentou o tamanho da fonte*/
+    margin-right: 30px;
+    /*da espaço separando os componentes*/
+    cursor: pointer;
+    /*quando passar o mouse em cima, vai aparecer uma mãozinha*/
+}
+
+.link-menu {
+    text-decoration: none;
+    color: white
+}
+
+li:hover {
+    /*o hover é quando passa o mouse em cima*/
+    color: #f9004d;
+    /*quando passar o mouse em cima, fica vermelho*/
+    transition: 1.0s;
+    /*demor 1seg para trocar a cor*/
+}
+
+.meu-nome {
+    position: absolute;
+    /*da o poder de movimentar pela págiam toda*/
+    top: 50%;
+    /*50% coloca no meio a página*/
+    left: 7%;
+    /*coloca 7% a esquerda da página*/
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 75px;
+}
+
+h1 span {
+    color: #f9004d;
+}
+
+.meu-nome h3 {
+    /*ele vai usar o h3 p achar o "desenvolvedora",
+poderia usar só o h3, mas se caso ele encontrasse outra h3 
+na pág, ele estilizaria tudo*/
+    color: #ffffff;
+    font-size: 25px;
+}
+
+section {
+    display: flex;
+    /*separa os componentes e coloca p
+     lado - separou a foto do texto (div)*/
+    align-items: center;
+    padding: 60px 15%;
+    background-color: black;
+
+}
+
+section img {
+    /*editando minha imagem*/
+    height: 400px;
+    /*tamanho da foto*/
+    border-radius: 100%;
+    /*deixa a foto redonda*/
+    border: 2px solid ;
+    margin-right: 40px;
+    /*separou a foto do texto*/
+    object-fit: cover;
+}
+
+section div h2 {
+    color: #ffffff;
+    font-size: 75px;
+}
+
+section div p {
+    color: #e2b9c6;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+/* section div button {
+    color: white;
+    background: #f9004d;
+    height: 45px;
+    width: 170px;
+    largura do botão 
+    font-size: 18px;
+    border: none;
+    /*tira a borda
+    border-radius: 26px;
+    /* coloca borda redonda
+    cursor: pointer;
+}
+
+section div button:hover {
+    background-color: black;
+    o botão fica preto quando passa o mouse
+    border: 3px solid #f9004d;
+    a borda tem cor vermelha
+    transition: 1.0s;
+} */
+
+section a {
+    background-color: #f9004d;
+    background: #f9004d;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    
+} 
+
+section a:hover {
+    transition: 0.5s;
+    background-color: black;
+    border: 3px solid #f9004d;
+}
+
+.projetos {
+    background-color: #191919;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.projetos h2 {
+    color: white;
+    font-size: 75px;
+    text-align: center;
+    /* padding-top: 50px; */
+    padding-bottom: 100px; 
+} 
+
+.card {
+    background-color: #000000;
+    height: 320px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px 35px;
+    /*os 20px vão ser aplicados em
+    cima e baixo e os 35 dos lados*/
+    text-align: center;
+}
+
+.card img {
+    height: 100px;
+    /*altura do botão*/
+
+}
+
+.card h5 {
+    color: white;
+    font-size: 24px;
+    /* margin-top: 20px; */
+}
+
+.card p {
+    color: #e2b9c6;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    /* font-size: 24px; */
+}
+
+.card a {
+    background-color: #f9004d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    /*serve para não ficar uma linha 
+    abaixo do botão de clicar no link */
+}
+
+.card a:hover {
+    background-color: transparent;
+    border: 3px solid #f9004d;
+    transition: 0.7s;
+}
+
+.card img {
+    border-radius: 25px;
+}
+
+.card-projetos {
+    display: flex;
+    /*coloca os cards um do lado do outro*/
+    /*a configuração do flex é deixar um do lado do outro se 
+definir como column ele fica em colunas*/
+    justify-content: space-around;
+    /*da espaço entre os cards*/
+    margin-top: 100px;
+}
+
+footer {
+    background-color: #000;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h5 {
+    color: white;
+    font-size: 30px;
+}
+
+footer p {
+    color: white;
+    font-size: 18px;
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+.social {
+    /*icone link e wpp*/
+    display: flex;
+    /*deixou um do lado do outro*/
+    gap: 20px;
+    /*deu um espaçamento*/
+}
+
+.social img {
+    height: 32px;
+    border-radius: 50%;
+}
+
+.social a {
+    background-color: #f9004d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*display, aling e just servem p deixar no centro*/
+    height: 50px;
+    width: 50px;
+    cursor:pointer;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+    /*ele da um zoom quando passa o mouse*/
+    transition: 0.3s;
+}
+
+.tecnologias {
+    background-color: #000000;
+    font-size: 70px;
+    color: white;
+    padding: 30px;
+}
+
+.tecnologias h6 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.tec img {
+    height: 70px;
+    border-radius: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px
+}
+
+.tec {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.tec img:hover {
+    transform: scale(1.3);
+    transition: 0.3s;
+    
+}
+
+
+@media screen and (max-width: 1020px) {
+    section {
+        flex-direction: column;
+    }
+
+    .card-projetos {
+        /* flex-direction: column; */
+        padding: 7px 10px;       
+    }
+
+    .card {
+        padding: 7px 7px;   
+    }
+
+    .card a {
+         padding: 10px 10px;     
+    }
+
+    .caixa-principal {
+        display:none;
+    }
+
+    .tec img {
+        height: 75px;
+       
+    }
+
+    section div h2 {
+        font-size: 55px;
+    }
+}
